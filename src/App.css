@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+a{
+  margin: 0 1rem;
+  list-style: none;
+  text-decoration: none;
+  color: grey;
+}
+Header Link{
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;

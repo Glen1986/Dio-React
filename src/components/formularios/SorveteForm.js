@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'wouter'
 
 class SorveteForm extends React.Component{
   constructor(props){
@@ -29,7 +30,7 @@ class SorveteForm extends React.Component{
     return(
       <div style={{border: '1px solid white',padding:'2rem', margin:'1rem'}}>
       <form onSubmit={this.handleSubmit} style={{display:'flex', flexDirection:'column'}}>
-      <h1>Sorveteria</h1>
+      <Link to="/select"><h3>Sorveteria</h3></Link>
       <label>
         escolha o sabor:
         <select name="" id="">

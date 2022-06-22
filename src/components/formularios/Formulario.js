@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'wouter'
 
 class Formulario extends React.Component {
   constructor(props){
@@ -18,7 +19,7 @@ class Formulario extends React.Component {
   render(){
   return(
   <form onSubmit={this.handleSubmit}>
-    <p>Formulario</p>
+    <Link to="/select"><p>Formulario</p></Link>
     <labe>
       Input:
       <input type="text" value={this.state.value} onChange={this.handleChange}/>
