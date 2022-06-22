@@ -11,19 +11,19 @@ import SorveteForm from './components/formularios/SorveteForm';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <section>
-            <Link to="/">App </Link>
-            <Link to="/select">Formularios Select</Link>
-            <Link to="/statefunction">lista Function</Link>
-            <Link to="/statefull">lista statefull</Link>
-        </section>
+     <header className="App-header">
+      <section>
+          <Link to="/">App </Link>
+          <Link to="/select">Formularios Select</Link>
+          <Link to="/statefunction">lista Function</Link>
+          <Link to="/statefull">lista statefull</Link>
+      </section>
+       <Route path="/"
+        />
         <Route path="/select"
           component={Select}
         />      
-        <Route ptah="/formularios/formulario"
-          component={Formulario}
-        />
+    
         <Route path="/statefunction"
           component={TodoListFunctional}
         />
