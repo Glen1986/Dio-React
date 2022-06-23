@@ -22,8 +22,7 @@ addItem =(item ) =>{
 removeItem = () => {
   this.setState({items: [...this.state.items.slice(1)]});
 }
-
-render(){
+ghhjhhjjghgjhrender(){
   const {items} = this.state;
   return(
     <div style={{border: '1px solid white',padding:'2rem', margin:'1rem'}} className="bloco-lista">

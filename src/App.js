@@ -6,6 +6,7 @@ import TodoListStatefull from './components/TodoListStatefull'
 import Select from './components/Select';
 import Formulario from './components/formularios/Formulario';
 import SorveteForm from './components/formularios/SorveteForm'; 
+import Counter from './components/Counter'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Link to="/select">Formularios Select</Link>
           <Link to="/statefunction">lista Function</Link>
           <Link to="/statefull">lista statefull</Link>
+          <Link to="/contador">contador</Link>        
       </section>
        <Route path="/"
         />
@@ -36,6 +38,9 @@ function App() {
         />
         <Route path="/formularios/sorveteria"
           component={SorveteForm}
+        />
+        <Route path="/contador"
+          component={Counter}
         />
       </header>
     </div>
