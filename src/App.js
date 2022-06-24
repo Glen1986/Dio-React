@@ -7,7 +7,7 @@ import Select from './components/Select';
 import Formulario from './components/formularios/Formulario';
 import SorveteForm from './components/formularios/SorveteForm'; 
 import Counter from './components/Counter'
-
+import {Topico1} from './service/Topico1'
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
           <Link to="/statefunction">lista Function</Link>
           <Link to="/statefull">lista statefull</Link>
           <Link to="/contador">contador</Link>        
+          <Link to="/cientistas">cientistas</Link>
+        
       </section>
        <Route path="/"
         />
@@ -41,6 +43,9 @@ function App() {
         />
         <Route path="/contador"
           component={Counter}
+        />
+        <Route path="/cientistas"
+          component={Topico1}
         />
       </header>
     </div>

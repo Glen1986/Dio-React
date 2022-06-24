@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 
-let value1 = '';
 class TodoListStatefull extends Component{
 
   constructor(props){
@@ -15,14 +14,27 @@ class TodoListStatefull extends Component{
   }
 
 addItem =(item ) =>{
+    /*
+    [...this.state.items, item] é o mesmo que:
+    let itemsUpdated = this.state.items;
+    itemsUpdated.push(item);
+    this.setState({ items: itemsUpdated }); 
+    */
   this.setState({items: [...this.state.items, item]});
 
 }
 
 removeItem = () => {
+      /*
+    [...this.state.items.slice(1)] é o mesmo que:
+    let itemsUpdated = this.state.items;
+    itemsUpdated.pop();
+    this.setState({ items: itemsUpdated }); 
+    */
   this.setState({items: [...this.state.items.slice(1)]});
+
 }
-ghhjhhjjghgjhrender(){
+render(){
   const {items} = this.state;
   return(
     <div style={{border: '1px solid white',padding:'2rem', margin:'1rem'}} className="bloco-lista">
@@ -30,12 +42,8 @@ ghhjhhjjghgjhrender(){
     <ul className="lista-estilizada">
       {items.map(item =><li>{item}</li>)}
     </ul>
-    <form action="">
-      <input type="text" name="value1" id="value1" value={value1}/>
-      <button onClick={()=>this.addItem() } type="submit">add</button>
+      <button onClick={()=> this.addItem()} type="submit">add</button>
       <button onClick={()=> this.removeItem()} type="submit">remove</button>
-
-    </form>
  </div>
   )
 }
